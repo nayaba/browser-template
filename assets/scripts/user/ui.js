@@ -16,6 +16,13 @@ const signInFail = function () {
   $('#messaging').text('Sign in failed')
 }
 
+const changePasswordSuccess = function () {
+  $('#messaging').text('Successfully changed password')
+}
+const changePasswordFail = function () {
+  $('#messaging').text('Failed to change password')
+}
+
 const signOutSuccess = function () {
   $('#messaging').text('Successfully signed out')
 }
@@ -28,6 +35,8 @@ module.exports = {
   signUpFail,
   signInSuccess,
   signInFail,
+  changePasswordSuccess,
+  changePasswordFail,
   signOutSuccess,
   signOutFail
 }

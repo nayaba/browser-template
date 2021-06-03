@@ -56,3 +56,14 @@ Require store.js in user/api.js
 Define signOutSuccess and signOutFailure functions in user/ui.js
 Require scripts/store.js in user/ui.js
 Update signInSuccess to store the user token in store.js
+------
+Add change password form to index.html
+
+Add change password event handler to app.js
+
+Define and export onChangePassword function in user/events.js
+
+Define and export changePassword function in user/api.js
+
+Define and export changePasswordSuccess in user/ui.js
+Define and export changePasswordFail in user/ui.js
