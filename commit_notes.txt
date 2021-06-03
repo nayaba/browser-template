@@ -37,3 +37,9 @@ Invoke ui.signUpFail in onSignUp function in user/events.js
 
 Removed required from sign up form on index.html to test signUpFail, which
 successfully shows a 'Sign up failed' message upon failure. Replaced required.
+--------
+Add 'Sign in Success' and 'Sign in Fail' messaging
+
+Invoke ui.signInSuccess and ui.signInFail in onSignIn function in user/events.js
+
+Write the signIn function with ajax call in user/api.js
