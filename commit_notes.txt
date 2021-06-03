@@ -16,3 +16,17 @@ Implement getFormFields in onSignUp function
 
 Update sign-up-form handler in app.js to trigger on 'submit' rather than 'click'
 Update sign-up-form handler to reference onSignUp function rather than signUp
+---------
+Fixed sign up bug in user/events.js where onSignUp was calling the api.SignUp
+function rather than the api.signUp function
+Require user/ui.js in user/events.js
+invoke ui.signUpSuccess funtion in onSignUp
+
+created user apple@jack password:p successfully in browser
+
+Create user/ui.js
+Create and export signUpSuccess function in user/ui.js
+Add sign up successful event to signUpSuccess function in user/ui.js
+
+created user flutter@shy password: p successfully in browser; received a
+'Sign up successful' message!
