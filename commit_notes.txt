@@ -43,3 +43,16 @@ Add 'Sign in Success' and 'Sign in Fail' messaging
 Invoke ui.signInSuccess and ui.signInFail in onSignIn function in user/events.js
 
 Write the signIn function with ajax call in user/api.js
+--------
+Add sign out button to index.html
+
+Add sign out event handler on app.js
+
+Define onSignOut function in user/events.js
+
+Define signOut function in user/api.js
+Require store.js in user/api.js
+
+Define signOutSuccess and signOutFailure functions in user/ui.js
+Require scripts/store.js in user/ui.js
+Update signInSuccess to store the user token in store.js
