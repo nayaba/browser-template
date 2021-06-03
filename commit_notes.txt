@@ -84,3 +84,10 @@ Define and export createEntry function in resource/api.js
 
 Create a file called ui.js in resource
 Define and export createEntrySuccess and createEntryFail in resource/ui.js
+---------
+Trying to add the owner to my create entry api call
+
+Use getElementById in signInSuccess function in user/ui.js to save the owner id
+and insert it into the 'create entry' form
+
+Add a hidden form field to index.html for owner id

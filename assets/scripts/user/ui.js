@@ -11,6 +11,7 @@ const signUpFail = function () {
 const signInSuccess = function (res) {
   $('#messaging').text('Sign in successful')
   store.user = res.user
+  document.getElementById('entry-owner').value = store.user._id
 }
 const signInFail = function () {
   $('#messaging').text('Sign in failed')
