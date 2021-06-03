@@ -5,3 +5,14 @@ Create an events.js file in scripts/user
 Export the onSignUp function from user/events.js
 Require the user/events file in app.js as userEvents
 -------
+Create new file user/api.js
+Create and export function signUp in user/api.js
+Require scripts/config.js in user/api.js
+Write the signUp function with ajax call
+
+Require user/api.js in user/events.js
+Require getFormFields in user/events.js
+Implement getFormFields in onSignUp function
+
+Update sign-up-form handler in app.js to trigger on 'submit' rather than 'click'
+Update sign-up-form handler to reference onSignUp function rather than signUp

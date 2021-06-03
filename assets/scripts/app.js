@@ -3,5 +3,5 @@
 const userEvents = require('./user/events')
 
 $(() => {
-  $('#sign-up-form').on('click', userEvents.signUp)
+  $('#sign-up-form').on('submit', userEvents.onSignUp)
 })
