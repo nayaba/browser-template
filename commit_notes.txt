@@ -67,3 +67,20 @@ Define and export changePassword function in user/api.js
 
 Define and export changePasswordSuccess in user/ui.js
 Define and export changePasswordFail in user/ui.js
+-------
+Add 'create entry' form to index.html
+Add 'entries div' div to index.html
+How do I get the owner passed in through ajax?
+
+Add 'create entry' event handler to app.js
+Require resource/events.js in app.js
+
+Create a folder called resource in scripts
+Create a file called events.js in resource
+Define and export onCreateEntry in resource/events.js
+
+Create a file called api.js in resource
+Define and export createEntry function in resource/api.js
+
+Create a file called ui.js in resource
+Define and export createEntrySuccess and createEntryFail in resource/ui.js
