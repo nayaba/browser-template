@@ -30,3 +30,10 @@ Add sign up successful event to signUpSuccess function in user/ui.js
 
 created user flutter@shy password: p successfully in browser; received a
 'Sign up successful' message!
+--------
+Add 'Sign up failed' messaging via signUpFail function in user/ui.js
+
+Invoke ui.signUpFail in onSignUp function in user/events.js
+
+Removed required from sign up form on index.html to test signUpFail, which
+successfully shows a 'Sign up failed' message upon failure. Replaced required.

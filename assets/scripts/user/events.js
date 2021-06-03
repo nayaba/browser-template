@@ -7,7 +7,7 @@ const onSignUp = function (event) {
   event.preventDefault()
   api.signUp(getFormFields(event.target))
     .then(ui.signUpSuccess)
-    .catch()
+    .catch(ui.signUpFail)
 }
 
 module.exports = {
