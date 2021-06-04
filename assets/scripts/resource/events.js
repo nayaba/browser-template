@@ -20,8 +20,8 @@ const onIndexEntries = function (event) {
 const onShowEntry = function (event) {
   event.preventDefault()
   api.showEntry(getFormFields(event.target))
-    .then()
-    .catch()
+    .then(ui.showEntrySuccess)
+    .catch(ui.showEntryFail)
 }
 
 const onUpdateEntry = function (event) {

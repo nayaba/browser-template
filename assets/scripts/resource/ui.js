@@ -12,19 +12,25 @@ const createEntryFail = function () {
 
 const indexEntriesSuccess = function (res) {
   store.entries = res.entries
-  console.log('stored entries in ui: ', store.entries)
   $('#entries-div').text(`${JSON.stringify(store.entries)}`)
 }
 const indexEntriesFail = function () {
   $('#messaging').text('Failed to find entries')
 }
 
-const updateEntrySuccess = function (res) {
+const showEntrySuccess = function (res) {
   store.entry = res.entry
   $('#entries-div').text(`${JSON.stringify(store.entry)}`)
 }
-const updateEntryFail = function (res) {
+const showEntryFail = function () {
+  $('#messaging').text('Failed to find entry')
+}
 
+const updateEntrySuccess = function (res) {
+  $('#messaging').text('successfully updated entry')
+}
+const updateEntryFail = function () {
+  $('#messaging').text('Failed to update entry')
 }
 
 module.exports = {
@@ -32,6 +38,8 @@ module.exports = {
   createEntryFail,
   indexEntriesSuccess,
   indexEntriesFail,
+  showEntrySuccess,
+  showEntryFail,
   updateEntrySuccess,
   updateEntryFail
 }

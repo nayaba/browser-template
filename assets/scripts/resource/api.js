@@ -27,7 +27,7 @@ const indexEntries = function () {
 const showEntry = function (data) {
   return $.ajax({
     method: 'GET',
-    url: config.apiUrl + `/entries/${store.entries._id}`,
+    url: config.apiUrl + `/entries/${data.id}`,
     headers: {
       Authorization: `Bearer ${store.user.token}`
     }
@@ -38,7 +38,7 @@ const updateEntry = function (data) {
   console.log(data)
   return $.ajax({
     method: 'PATCH',
-    url: config.apiUrl + `/entries/${store.entries._id}`,
+    url: config.apiUrl + `/entries/${data.id}`,
     data: data,
     headers: {
       Authorization: `Bearer ${store.user.token}`
