@@ -102,3 +102,28 @@ Define and export indexEntries function in resource/api.js
 
 Define and export indexEntriesSuccess and indexEntriesFail functions in
 resource/ui.js
+----------
+Update index to display most recently created entry first
+
+Add update form to index.html
+
+Add update entry event handler to app.js
+
+Define and export onUpdateEntry function in resource/events.js
+-- you have to index entries before you can update; index needs to store
+entry ids so that we can grab them from store.entry in the api call
+
+Define and export updateEntry function in resource/api.js
+
+Define and export updateEntrySuccess and updateEntryFail function in
+resource/ui.js
+
+Update functionality not working yet - going to attempt to show one before I
+update one
+
+Add 'show one entry' search form to index.html
+Add show entry event handler to app.js
+
+Define and export onShowEntry function in resource/events.js
+
+Define and export showEntry function in resource/api.js

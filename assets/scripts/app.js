@@ -11,4 +11,6 @@ $(() => {
 
   $('#create-entry-form').on('submit', resourceEvents.onCreateEntry)
   $('#index-entries-button').on('click', resourceEvents.onIndexEntries)
+  $('#show-entry-form').on('submit', resourceEvents.onShowEntry)
+  $('#update-entry-form').on('submit', resourceEvents.onUpdateEntry)
 })

@@ -17,7 +17,23 @@ const onIndexEntries = function (event) {
     .catch(ui.indexEntriesFail)
 }
 
+const onShowEntry = function (event) {
+  event.preventDefault()
+  api.showEntry(getFormFields(event.target))
+    .then()
+    .catch()
+}
+
+const onUpdateEntry = function (event) {
+  event.preventDefault()
+  api.updateEntry(getFormFields(event.target))
+    .then(ui.updateEntrySuccess)
+    .catch(ui.updateEntryFail)
+}
+
 module.exports = {
   onCreateEntry,
-  onIndexEntries
+  onIndexEntries,
+  onShowEntry,
+  onUpdateEntry
 }
