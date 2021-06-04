@@ -27,10 +27,17 @@ const showEntryFail = function () {
 }
 
 const updateEntrySuccess = function (res) {
-  $('#messaging').text('successfully updated entry')
+  $('#messaging').text('Successfully updated entry')
 }
 const updateEntryFail = function () {
   $('#messaging').text('Failed to update entry')
+}
+
+const deleteEntrySuccess = function () {
+  $('#messaging').text('Successfully deleted entry')
+}
+const deleteEntryFail = function () {
+  $('#messaging').text('Failed to delete entry')
 }
 
 module.exports = {
@@ -41,5 +48,7 @@ module.exports = {
   showEntrySuccess,
   showEntryFail,
   updateEntrySuccess,
-  updateEntryFail
+  updateEntryFail,
+  deleteEntrySuccess,
+  deleteEntryFail
 }

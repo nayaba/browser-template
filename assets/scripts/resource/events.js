@@ -31,9 +31,17 @@ const onUpdateEntry = function (event) {
     .catch(ui.updateEntryFail)
 }
 
+const onDeleteEntry = function (event) {
+  event.preventDefault()
+  api.deleteEntry(getFormFields(event.target))
+    .then(ui.deleteEntrySuccess)
+    .catch(ui.deleteEntryFail)
+}
+
 module.exports = {
   onCreateEntry,
   onIndexEntries,
   onShowEntry,
-  onUpdateEntry
+  onUpdateEntry,
+  onDeleteEntry
 }

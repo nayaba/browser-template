@@ -127,3 +127,7 @@ Add show entry event handler to app.js
 Define and export onShowEntry function in resource/events.js
 
 Define and export showEntry function in resource/api.js
+-----------
+Add 'delete entry' functionality
+
+Add delete entry form to index.html

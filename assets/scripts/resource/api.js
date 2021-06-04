@@ -35,7 +35,6 @@ const showEntry = function (data) {
 }
 
 const updateEntry = function (data) {
-  console.log(data)
   return $.ajax({
     method: 'PATCH',
     url: config.apiUrl + `/entries/${data.id}`,
@@ -46,9 +45,20 @@ const updateEntry = function (data) {
   })
 }
 
+const deleteEntry = function (data) {
+  return $.ajax({
+    method: 'DELETE',
+    url: config.apiUrl + `/entries/${data.id}`,
+    headers: {
+      Authorization: `Bearer ${store.user.token}`
+    }
+  })
+}
+
 module.exports = {
   createEntry,
   indexEntries,
   showEntry,
-  updateEntry
+  updateEntry,
+  deleteEntry
 }
