@@ -5,6 +5,7 @@ const createEntrySuccess = function (res) {
   store.entry = res.entry
   // need to refactor this into something legible in the future
   $('#entries-div').text(`${JSON.stringify(store.entry)}`)
+  $('#create-entry-form').trigger('reset')
 }
 const createEntryFail = function () {
   $('#messaging').text('Failed to create new entry')
@@ -21,6 +22,7 @@ const indexEntriesFail = function () {
 const showEntrySuccess = function (res) {
   store.entry = res.entry
   $('#entries-div').text(`${JSON.stringify(store.entry)}`)
+  $('#show-entry-form').trigger('reset')
 }
 const showEntryFail = function () {
   $('#messaging').text('Failed to find entry')
@@ -28,6 +30,8 @@ const showEntryFail = function () {
 
 const updateEntrySuccess = function (res) {
   $('#messaging').text('Successfully updated entry')
+  $('#update-entry-form').trigger('reset')
+  $('#entries-div').trigger('reset')
 }
 const updateEntryFail = function () {
   $('#messaging').text('Failed to update entry')
@@ -35,6 +39,8 @@ const updateEntryFail = function () {
 
 const deleteEntrySuccess = function () {
   $('#messaging').text('Successfully deleted entry')
+  $('#delete-entry-form').trigger('reset')
+  $('#entries-div').trigger('reset')
 }
 const deleteEntryFail = function () {
   $('#messaging').text('Failed to delete entry')

@@ -131,3 +131,17 @@ Define and export showEntry function in resource/api.js
 Add 'delete entry' functionality
 
 Add delete entry form to index.html
+------
+Update placeholder text of changePassword forms
+--------
+Trigger reset after success on:
+sign-up-form
+sign-in-form
+change-password-form
+sign-out success
+create-entry-form
+show-entry-form
+update-entry-form
+delete-entry-form
+
+Trigger entries-div reset after update entry success and delete entry success
