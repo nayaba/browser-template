@@ -10,4 +10,5 @@ $(() => {
   $('#sign-out-button').on('click', userEvents.onSignOut)
 
   $('#create-entry-form').on('submit', resourceEvents.onCreateEntry)
+  $('#index-entries-button').on('click', resourceEvents.onIndexEntries)
 })

@@ -2,7 +2,6 @@
 const api = require('./api')
 const ui = require('./ui')
 const getFormFields = require('./../../../lib/get-form-fields.js')
-const store = require('./../store.js')
 
 const onCreateEntry = function (event) {
   event.preventDefault()
@@ -11,6 +10,14 @@ const onCreateEntry = function (event) {
     .catch(ui.createEntryFail)
 }
 
+const onIndexEntries = function (event) {
+  event.preventDefault()
+  api.indexEntries()
+    .then(ui.indexEntriesSuccess)
+    .catch(ui.indexEntriesFail)
+}
+
 module.exports = {
-  onCreateEntry
+  onCreateEntry,
+  onIndexEntries
 }
