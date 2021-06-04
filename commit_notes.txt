@@ -1,3 +1,4 @@
+------- MVP BRANCH
 Add sign up form to index.html
 Add an event handler to scripts/app.js
 Create a user folder in scripts
@@ -147,3 +148,6 @@ delete-entry-form
 Trigger entries-div reset after update entry success and delete entry success
 --------
 Hide sign up and sign in for signed in users
+------- DESIGN BRANCH
+Format sign in forms with bootstrap
+Create a center div on index.html

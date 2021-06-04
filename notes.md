@@ -2,7 +2,7 @@ checkout option for forms to see about dropdown menus for symbols
 
 add custom errors to browser
 
-change index to show most recently updated entry first
+x- change index to show most recently updated entry first
 
 create update entry form
 
@@ -15,3 +15,10 @@ Restarting dynos on ⬢ arcane-castle-76973... done
 $ heroku open
 ~/sei/projects/journal-project/express-api (main)
 $ heroku logs --tail
+
+
+Add remember me chcekbox
+https://jsfiddle.net/wrvnsst2/
+
+
+change font
