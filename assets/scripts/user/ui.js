@@ -10,6 +10,8 @@ const signUpFail = function () {
 }
 
 const signInSuccess = function (res) {
+  $('#before-sign-in').hide()
+  $('#after-sign-in').show()
   $('#messaging').text('Sign in successful')
   store.user = res.user
   document.getElementById('entry-owner').value = store.user._id
@@ -32,6 +34,8 @@ const signOutSuccess = function () {
   $('#messaging').text('Successfully signed out')
   $('#sign-up-form').trigger('reset')
   $('#sign-in-form').trigger('reset')
+  $('#before-sign-in').show()
+  $('#after-sign-in').hide()
 }
 const signOutFail = function () {
   $('#messaging').text('Failed to sign out')

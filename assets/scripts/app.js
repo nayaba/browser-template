@@ -4,6 +4,7 @@ const userEvents = require('./user/events')
 const resourceEvents = require('./resource/events')
 
 $(() => {
+  $('#after-sign-in').hide()
   $('#sign-up-form').on('submit', userEvents.onSignUp)
   $('#sign-in-form').on('submit', userEvents.onSignIn)
   $('#change-password-form').on('submit', userEvents.onChangePassword)

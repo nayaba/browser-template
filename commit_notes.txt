@@ -145,3 +145,5 @@ update-entry-form
 delete-entry-form
 
 Trigger entries-div reset after update entry success and delete entry success
+--------
+Hide sign up and sign in for signed in users
