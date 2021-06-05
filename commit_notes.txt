@@ -159,3 +159,5 @@ Add sign up link to sign in div
 Add sign in link to sign up div
 
 Remove btn-block from sign up/sign in buttons
+---------
+Edit sign in and sign up links to actually look like links
