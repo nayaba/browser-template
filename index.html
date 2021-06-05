@@ -77,7 +77,7 @@
             <input name="entry[text]" required type="text" placeholder="new entry" class="form-control mb-2">
             <!-- <input name="entry[symbol]" required type="text" placeholder="-, *, +, or >" class="form-control mb-2"> -->
             <label for="symbols" class="sr-only">Choose a symbol:</label>
-              <select id="symbols" name="entry[symbol]" size="4" class="form-control mb-2">
+              <select id="symbols" name="entry[symbol]" class="form-control mb-2">
                 <option value="-">- a note</option>
                 <option value="*">* a task</option>
                 <option value="+">+ an event</option>
@@ -111,7 +111,7 @@
             <button type="submit">Delete Entry</button>
           </form>
         </div>
-        <div id="entries-div">
+        <div id="entries-div"><pre id="json"></pre>
         </div>
       </div>
 

@@ -13,7 +13,28 @@ const createEntryFail = function () {
 
 const indexEntriesSuccess = function (res) {
   store.entries = res.entries
-  $('#entries-div').text(`${JSON.stringify(store.entries)}`)
+
+  // let myObj = {}
+  //
+  // for (let i = 0; i < store.entries.length; i++) {
+  //   myObj[i] = `${JSON.stringify(store.entries[i].text)}`
+  // }
+
+  // console.log(myObj)
+  $('#json').text(JSON.stringify(store.entries, null, 4))
+
+  // const data = `${JSON.stringify(store.entries)}`
+  // const myObj = JSON.parse(data)
+  // console.log('obj.text: ', myObj[0].text)
+  //
+  // let indexMyObj = {}
+  //
+  // for (let i = 0; i < myObj.length; i++) {
+  //   console.log('obj array: ', myObj[i].text)
+  //   indexMyObj = myObj[i].text
+  //   $('#entries-div').add(indexMyObj)
+  // }
+
 }
 const indexEntriesFail = function () {
   $('#messaging').text('Failed to find entries')

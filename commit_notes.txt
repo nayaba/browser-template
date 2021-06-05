@@ -167,3 +167,6 @@ Edit 'After Sign In' buttons/forms
 Add navbar
 Add symbol dropdown for new entry
 why aren't glyphicons working?
+---------
+Edit symbol dropdown in new entry form
+Format the JSON into "pretty" entries - not nearly good enough yet though
