@@ -4,13 +4,16 @@ const store = require('./../store.js')
 const signUpSuccess = function (res) {
   $('#messaging').text('Sign up successful')
   $('#sign-up-form').trigger('reset')
+  $('#sign-in-form').trigger('reset')
+  $('#sign-up-div').hide()
+  $('#sign-in-div').show()
 }
 const signUpFail = function () {
   $('#messaging').text('Sign up failed')
 }
 
 const signInSuccess = function (res) {
-  $('#before-sign-in').hide()
+  $('#sign-in-div').hide()
   $('#after-sign-in').show()
   $('#messaging').text('Sign in successful')
   store.user = res.user
@@ -34,11 +37,16 @@ const signOutSuccess = function () {
   $('#messaging').text('Successfully signed out')
   $('#sign-up-form').trigger('reset')
   $('#sign-in-form').trigger('reset')
-  $('#before-sign-in').show()
+  $('#sign-in-div').show()
   $('#after-sign-in').hide()
 }
 const signOutFail = function () {
   $('#messaging').text('Failed to sign out')
+}
+
+const signUpLinkSuccess = function () {
+  $('#sign-up-div').show()
+  $('#sign-in-div').hide()
 }
 
 module.exports = {
@@ -49,5 +57,6 @@ module.exports = {
   changePasswordSuccess,
   changePasswordFail,
   signOutSuccess,
-  signOutFail
+  signOutFail,
+  signUpLinkSuccess
 }

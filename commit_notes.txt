@@ -151,3 +151,7 @@ Hide sign up and sign in for signed in users
 ------- DESIGN BRANCH
 Format sign in forms with bootstrap
 Create a center div on index.html
+--------
+Hide sign up
+
+Add sign up link to sign in div

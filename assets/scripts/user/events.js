@@ -31,9 +31,16 @@ const onSignOut = function (event) {
     .catch(ui.signOutFail)
 }
 
+// hide sign in div
+const onSignUpLink = function (event) {
+  event.preventDefault()
+  ui.signUpLinkSuccess()
+}
+
 module.exports = {
   onSignUp,
   onSignIn,
   onChangePassword,
-  onSignOut
+  onSignOut,
+  onSignUpLink
 }
