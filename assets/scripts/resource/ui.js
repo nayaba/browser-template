@@ -12,28 +12,26 @@ const createEntryFail = function () {
 }
 
 const indexEntriesSuccess = function (res) {
-  store.entries = res.entries
-
-  // let myObj = {}
-  //
-  // for (let i = 0; i < store.entries.length; i++) {
-  //   myObj[i] = `${JSON.stringify(store.entries[i].text)}`
-  // }
-
-  // console.log(myObj)
-  $('#json').text(JSON.stringify(store.entries, null, 4))
-
-  // const data = `${JSON.stringify(store.entries)}`
-  // const myObj = JSON.parse(data)
-  // console.log('obj.text: ', myObj[0].text)
-  //
-  // let indexMyObj = {}
-  //
-  // for (let i = 0; i < myObj.length; i++) {
-  //   console.log('obj array: ', myObj[i].text)
-  //   indexMyObj = myObj[i].text
-  //   $('#entries-div').add(indexMyObj)
-  // }
+  console.log(res)
+  // store.entries = res.entries
+  // $('#json').text(JSON.stringify(store.entries, null, 4))
+  let entriesHtml = ''
+  res.entries.forEach(function (entry) {
+    entriesHtml += `
+      <h4>${entry.symbol}</h4>
+      <p>${entry.text}</p>
+      <p>ID: ${entry._id}</p>
+      <button class="dynamic-destroy-book" data-id=${entry._id}>Delete Book</button>
+      <form class="dynamic-update-book" data-id=${entry._id}>
+        <label for="update-book-title">Book Title</label>
+        <input class="update-book-title" type="text" name="book[title]" placeholder="Book Title">
+        <label for="update-book-author">Book Author</label>
+        <input class="update-book-author" type="text" name="book[author]" placeholder="Author">
+        <button class="dynamic-update-book">Update Book</button>
+      </form>
+    `
+  })
+  $('#entries-div').html(entriesHtml)
 
 }
 const indexEntriesFail = function () {
