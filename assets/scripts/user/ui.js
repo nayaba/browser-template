@@ -48,6 +48,10 @@ const signUpLinkSuccess = function () {
   $('#sign-up-div').show()
   $('#sign-in-div').hide()
 }
+const signInLinkSuccess = function () {
+  $('#sign-up-div').hide()
+  $('#sign-in-div').show()
+}
 
 module.exports = {
   signUpSuccess,
@@ -58,5 +62,6 @@ module.exports = {
   changePasswordFail,
   signOutSuccess,
   signOutFail,
-  signUpLinkSuccess
+  signUpLinkSuccess,
+  signInLinkSuccess
 }

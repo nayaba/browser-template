@@ -155,3 +155,7 @@ Create a center div on index.html
 Hide sign up
 
 Add sign up link to sign in div
+---------
+Add sign in link to sign up div
+
+Remove btn-block from sign up/sign in buttons

@@ -37,10 +37,16 @@ const onSignUpLink = function (event) {
   ui.signUpLinkSuccess()
 }
 
+const onSignInLink = function (event) {
+  event.preventDefault()
+  ui.signInLinkSuccess()
+}
+
 module.exports = {
   onSignUp,
   onSignIn,
   onChangePassword,
   onSignOut,
-  onSignUpLink
+  onSignUpLink,
+  onSignInLink
 }

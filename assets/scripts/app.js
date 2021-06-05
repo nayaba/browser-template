@@ -10,6 +10,7 @@ $(() => {
 
   // click on sign up link to show sign up div and hide sign in div
   $('#sign-up-link').on('click', userEvents.onSignUpLink)
+  $('#sign-in-link').on('click', userEvents.onSignInLink)
 
   $('#sign-up-form').on('submit', userEvents.onSignUp)
   $('#sign-in-form').on('submit', userEvents.onSignIn)
