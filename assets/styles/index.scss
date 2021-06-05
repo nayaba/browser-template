@@ -1,4 +1,9 @@
 @import '~bootstrap/scss/bootstrap';
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../fonts/glyphicons-halflings-regular.eot');
+  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
 
 #sign-up-link {
   background-color: inherit;
@@ -8,4 +13,15 @@
 #sign-in-link {
   background-color: inherit;
   border: none;
+}
+
+#forgot-password-link {
+  background-color: inherit;
+  border: none;
+}
+
+.btn-primary-1 {
+  background-color: MediumSlateBlue;
+  border: none;
+  color: white;
 }

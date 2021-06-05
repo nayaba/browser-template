@@ -1,6 +1,7 @@
 'use strict'
 const api = require('./api')
 const ui = require('./ui')
+const store = require('./../store.js')
 const getFormFields = require('./../../../lib/get-form-fields.js')
 
 const onSignUp = function (event) {
@@ -42,6 +43,15 @@ const onSignInLink = function (event) {
   ui.signInLinkSuccess()
 }
 
+// const onForgotPasswordLink = function (event) {
+//   event.preventDefault()
+//   if (store.user !== undefined) {
+//     ui.forgotPasswordLinkSuccess()
+//   } else {
+//     ui.forgotPasswordLinkFail()
+//   }
+// }
+
 module.exports = {
   onSignUp,
   onSignIn,
@@ -49,4 +59,5 @@ module.exports = {
   onSignOut,
   onSignUpLink,
   onSignInLink
+  // onForgotPasswordLink
 }

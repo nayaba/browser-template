@@ -53,6 +53,13 @@ const signInLinkSuccess = function () {
   $('#sign-in-div').show()
 }
 
+// const forgotPasswordLinkSuccess = function () {
+//   $('#change-password-div').show()
+// }
+// const forgotPasswordLinkFail = function () {
+//   $('#messaging').text('You must be logged in to change your password')
+// }
+
 module.exports = {
   signUpSuccess,
   signUpFail,
@@ -64,4 +71,6 @@ module.exports = {
   signOutFail,
   signUpLinkSuccess,
   signInLinkSuccess
+  // forgotPasswordLinkSuccess,
+  // forgotPasswordLinkFail
 }

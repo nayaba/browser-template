@@ -161,3 +161,9 @@ Add sign in link to sign up div
 Remove btn-block from sign up/sign in buttons
 ---------
 Edit sign in and sign up links to actually look like links
+---------
+Change sign in and sign up button colors
+Edit 'After Sign In' buttons/forms
+Add navbar
+Add symbol dropdown for new entry
+why aren't glyphicons working?
