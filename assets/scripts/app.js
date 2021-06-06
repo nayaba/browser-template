@@ -26,4 +26,5 @@ $(() => {
   $('#delete-entry-form').on('submit', resourceEvents.onDeleteEntry)
 
   $('#entries-div').on('submit', '.dynamic-update-entry', resourceEvents.onDynamicUpdateEntry)
+  $('#entries-div').on('click', '.dynamic-delete-entry', resourceEvents.onDynamicDeleteEntry)
 })

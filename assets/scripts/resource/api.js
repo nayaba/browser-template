@@ -56,11 +56,20 @@ const deleteEntry = function (data) {
 }
 
 const dynamicUpdateEntry = function (id, data) {
-  console.log('in updateBook')
   return $.ajax({
     method: 'PATCH',
     url: config.apiUrl + '/entries/' + id,
     data: data,
+    headers: {
+      Authorization: `Bearer ${store.user.token}`
+    }
+  })
+}
+
+const dynamicDeleteEntry = function (id) {
+  return $.ajax({
+    method: 'DELETE',
+    url: config.apiUrl + `/entries/${id}`,
     headers: {
       Authorization: `Bearer ${store.user.token}`
     }
@@ -73,5 +82,6 @@ module.exports = {
   showEntry,
   updateEntry,
   deleteEntry,
-  dynamicUpdateEntry
+  dynamicUpdateEntry,
+  dynamicDeleteEntry
 }

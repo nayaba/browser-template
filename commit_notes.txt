@@ -174,3 +174,7 @@ Format the JSON into "pretty" entries - not nearly good enough yet though
 Index entries in html format with dynamic delete button
 --------
 Add functional dynamic update button on index
+--------
+Found bug with enums - can pass any string as the symbol
+
+Successfully added dynamic delete button functionality

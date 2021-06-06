@@ -40,16 +40,26 @@ const onDeleteEntry = function (event) {
 
 const onDynamicUpdateEntry = function (event) {
   event.preventDefault()
-  console.log('in onDynamicUpdateEntry')
+
   const updateForm = event.target
   const id = $(updateForm).data('id')
-  console.log(id)
 
   const data = getFormFields(updateForm)
 
   api.dynamicUpdateEntry(id, data)
-    .then(ui.onUpdateSuccess)
-    .catch(ui.onError)
+    .then(ui.updateEntrySuccess)
+    .catch(ui.updateEntryFail)
+}
+
+const onDynamicDeleteEntry = function (event) {
+  event.preventDefault()
+
+  const updateForm = event.target
+  const id = $(updateForm).data('id')
+
+  api.dynamicDeleteEntry(id)
+    .then(ui.deleteEntrySuccess)
+    .catch(ui.deleteEntryFail)
 }
 
 module.exports = {
@@ -58,5 +68,6 @@ module.exports = {
   onShowEntry,
   onUpdateEntry,
   onDeleteEntry,
-  onDynamicUpdateEntry
+  onDynamicUpdateEntry,
+  onDynamicDeleteEntry
 }

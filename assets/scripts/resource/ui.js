@@ -20,8 +20,7 @@ const indexEntriesSuccess = function (res) {
     entriesHtml += `
       <h4>${entry.symbol}</h4>
       <p>${entry.text}</p>
-      <p>ID: ${entry._id}</p>
-      <button class="dynamic-destroy-entry" data-id=${entry._id}>Delete Entry</button>
+      <button class="dynamic-delete-entry" data-id=${entry._id}>Delete Entry</button>
       <form class="dynamic-update-entry" data-id=${entry._id}>
         <input class="update-entry-text" type="text" name="entry[text]" placeholder="text">
         <input class="update-entry-symbol" type="text" name="entry[symbol]" placeholder="symbol">
