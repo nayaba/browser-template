@@ -38,10 +38,25 @@ const onDeleteEntry = function (event) {
     .catch(ui.deleteEntryFail)
 }
 
+const onDynamicUpdateEntry = function (event) {
+  event.preventDefault()
+  console.log('in onDynamicUpdateEntry')
+  const updateForm = event.target
+  const id = $(updateForm).data('id')
+  console.log(id)
+
+  const data = getFormFields(updateForm)
+
+  api.dynamicUpdateEntry(id, data)
+    .then(ui.onUpdateSuccess)
+    .catch(ui.onError)
+}
+
 module.exports = {
   onCreateEntry,
   onIndexEntries,
   onShowEntry,
   onUpdateEntry,
-  onDeleteEntry
+  onDeleteEntry,
+  onDynamicUpdateEntry
 }

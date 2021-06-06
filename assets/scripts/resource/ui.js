@@ -21,13 +21,11 @@ const indexEntriesSuccess = function (res) {
       <h4>${entry.symbol}</h4>
       <p>${entry.text}</p>
       <p>ID: ${entry._id}</p>
-      <button class="dynamic-destroy-book" data-id=${entry._id}>Delete Book</button>
-      <form class="dynamic-update-book" data-id=${entry._id}>
-        <label for="update-book-title">Book Title</label>
-        <input class="update-book-title" type="text" name="book[title]" placeholder="Book Title">
-        <label for="update-book-author">Book Author</label>
-        <input class="update-book-author" type="text" name="book[author]" placeholder="Author">
-        <button class="dynamic-update-book">Update Book</button>
+      <button class="dynamic-destroy-entry" data-id=${entry._id}>Delete Entry</button>
+      <form class="dynamic-update-entry" data-id=${entry._id}>
+        <input class="update-entry-text" type="text" name="entry[text]" placeholder="text">
+        <input class="update-entry-symbol" type="text" name="entry[symbol]" placeholder="symbol">
+        <button class="dynamic-update-entry">Update Entry</button>
       </form>
     `
   })
