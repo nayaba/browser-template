@@ -212,3 +212,5 @@ Update 'sign up successful' message to give sign in instruction
 Move update entry form to modal
 --------
 Add functionality to update entry form in modal
+--------
+Need notification of successful update

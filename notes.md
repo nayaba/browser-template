@@ -30,5 +30,7 @@ https://www.codeply.com/go/pG674ErRQg
 
 need to .reset messaging and entries div at appropriate times
 
+add date to card headers
+
 
 make sure entries div clears after showing an entry
