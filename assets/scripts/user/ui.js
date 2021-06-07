@@ -20,6 +20,7 @@ const signInSuccess = function (res) {
   store.user = res.user
   document.getElementById('entry-owner').value = store.user._id
   $('#sign-in-form').trigger('reset')
+  $('#sign-in-modal').modal('show')
 }
 const signInFail = function () {
   $('#messaging').text('Sign in failed')
