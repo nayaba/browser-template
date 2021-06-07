@@ -19,6 +19,11 @@
           <span class="navbar-text mt-1">Dujo</span>
           <ul class="navbar-nav">
             <li class="nav-item">
+              <div id="change-password-nav-div">
+                <button class="btn-link mt-1" id="change-password-nav-button" type="submit">Change Password</button>
+              </div>
+            </li>
+            <li class="nav-item">
               <div id="sign-out-div">
                 <button class="btn-link mt-1" id="sign-out-button" type="submit">Sign Out</button>
               </div>
@@ -51,7 +56,7 @@
           <form id="sign-in-form" style="max-width:300px;margin:auto">
             <input name="credentials[email]" required autofocus type="text" placeholder="example@email.com" class="form-control mb-2">
             <input name="credentials[password]" required type="password" placeholder="password" class="form-control mb-2">
-            <div><button class="btn-link mt-2" id="forgot-password-link">Forgot password?</button></div>
+            <!-- <div><button class="btn-link mt-2" id="forgot-password-link">Forgot password?</button></div> -->
             <button type="submit" class="btn btn-primary-1 mt-2" id="sign-in-button">Sign In</button>
             <div>Don't have an account? <button class="btn-link mt-2" id="sign-up-link">Sign up</button></div>
           </form>

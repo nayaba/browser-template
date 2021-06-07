@@ -14,6 +14,7 @@ const signUpFail = function () {
 
 const signInSuccess = function (res) {
   $('#sign-in-div').hide()
+  $('#nav').show()
   $('#after-sign-in').show()
   $('#messaging').text('Sign in successful')
   store.user = res.user
@@ -53,6 +54,14 @@ const signInLinkSuccess = function () {
   $('#sign-in-div').show()
 }
 
+const navChangePassword = function () {
+  $('#change-password-div').show()
+  $('#create-entry-div').hide()
+  $('#index-entry-div').hide()
+  $('#show-entry-div').hide()
+
+}
+
 // const forgotPasswordLinkSuccess = function () {
 //   $('#change-password-div').show()
 // }
@@ -70,7 +79,8 @@ module.exports = {
   signOutSuccess,
   signOutFail,
   signUpLinkSuccess,
-  signInLinkSuccess
+  signInLinkSuccess,
+  navChangePassword
   // forgotPasswordLinkSuccess,
   // forgotPasswordLinkFail
 }

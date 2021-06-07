@@ -43,6 +43,11 @@ const onSignInLink = function (event) {
   ui.signInLinkSuccess()
 }
 
+const onNavChangePassword = function (event) {
+  event.preventDefault()
+  ui.navChangePassword()
+}
+
 // const onForgotPasswordLink = function (event) {
 //   event.preventDefault()
 //   if (store.user !== undefined) {
@@ -58,6 +63,7 @@ module.exports = {
   onChangePassword,
   onSignOut,
   onSignUpLink,
-  onSignInLink
+  onSignInLink,
+  onNavChangePassword
   // onForgotPasswordLink
 }

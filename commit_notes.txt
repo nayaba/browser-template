@@ -190,4 +190,8 @@ like a link; move sign out link to the navbar
 Format change password and search forms to be in line with the rest of the
 forms on the page
 Fix search by id bug: api url needed to be: '/entries/' + id.id
-Form search by id results so JSON is not on page
+Format search by id results so JSON is not on page
+--------
+hide 'change password' and 'search'
+Add 'change password' to navbar; initially hide change-password-div, show
+on change-password-nav-button click

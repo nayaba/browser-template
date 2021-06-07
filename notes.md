@@ -24,4 +24,3 @@ https://jsfiddle.net/wrvnsst2/
 change font
 
 Automatically refresh the page after update or delete
-hide 'change password' and 'search'
