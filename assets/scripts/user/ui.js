@@ -2,7 +2,7 @@
 const store = require('./../store.js')
 
 const signUpSuccess = function (res) {
-  $('#modal-01-body').html('Successfully signed up!')
+  $('#modal-01-body').html('Successfully signed up! Please sign in to get started.')
   $('#modal-01').modal('show')
   $('#sign-up-form').trigger('reset')
   $('#sign-in-form').trigger('reset')

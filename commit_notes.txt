@@ -206,3 +206,5 @@ Customize sign in modal
 Update all 'user' 'messaging' to appear in modal
 --------
 Update all 'resource' 'messaging' to appear in modal
+--------
+Update 'sign up successful' message to give sign in instruction

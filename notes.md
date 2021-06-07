@@ -29,3 +29,6 @@ add search function to navbar
 https://www.codeply.com/go/pG674ErRQg
 
 need to .reset messaging and entries div at appropriate times
+
+
+make sure entries div clears after showing an entry

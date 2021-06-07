@@ -19,17 +19,29 @@ const indexEntriesSuccess = function (res) {
   let entriesHtml = ''
   res.entries.forEach(function (entry) {
     entriesHtml += `
-      <h4>${entry.symbol}</h4>
-      <p>${entry.text}</p>
-      <button class="dynamic-delete-entry" data-id=${entry._id}>Delete Entry</button>
-      <form class="dynamic-update-entry" data-id=${entry._id}>
-        <input class="update-entry-text" type="text" name="entry[text]" placeholder="text">
-        <input class="update-entry-symbol" type="text" name="entry[symbol]" placeholder="symbol">
-        <button class="dynamic-update-entry">Update Entry</button>
-      </form>
-    `
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card" style="width: 18rem;">
+        <!-- <img src="..." class="card-img-top" alt="..."> -->
+        <div class="card-body">
+          <h5 class="card-title">${entry.symbol}</h5>
+          <p class="card-text">${entry.text}</p>
+          <div class="card-footer">
+          <button class="dynamic-delete-entry" data-id=${entry._id}>Delete Entry</button>
+          <form class="dynamic-update-entry" data-id=${entry._id}>
+            <input class="update-entry-text" type="text" name="entry[text]" placeholder="text">
+            <input class="update-entry-symbol" type="text" name="entry[symbol]" placeholder="symbol">
+            <button class="dynamic-update-entry">Update Entry</button>
+          </form>
+          </div>
+          </div>
+          </div>
+        </div>
+      </div>
+  `
   })
-  $('#entries-div').html(entriesHtml)
+
+  $('#entries-div-container').html(entriesHtml)
 }
 const indexEntriesFail = function () {
   $('#modal-01-body').html('Failed to find entries')
