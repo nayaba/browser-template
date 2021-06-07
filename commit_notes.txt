@@ -204,3 +204,5 @@ Create blank 'sign in successful' modal
 --------
 Customize sign in modal
 Update all 'user' 'messaging' to appear in modal
+--------
+Update all 'resource' 'messaging' to appear in modal

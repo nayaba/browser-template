@@ -11,7 +11,8 @@ const createEntrySuccess = function (res) {
   $('#create-entry-form').trigger('reset')
 }
 const createEntryFail = function () {
-  $('#messaging').text('Failed to create new entry')
+  $('#modal-01-body').html('Failed to create new entry')
+  $('#modal-01').modal('show')
 }
 
 const indexEntriesSuccess = function (res) {
@@ -31,7 +32,8 @@ const indexEntriesSuccess = function (res) {
   $('#entries-div').html(entriesHtml)
 }
 const indexEntriesFail = function () {
-  $('#messaging').text('Failed to find entries')
+  $('#modal-01-body').html('Failed to find entries')
+  $('#modal-01').modal('show')
 }
 
 const showEntrySuccess = function (res) {
@@ -51,25 +53,30 @@ const showEntrySuccess = function (res) {
   $('#index-entry-div').hide()
 }
 const showEntryFail = function () {
-  $('#messaging').text('Failed to find entry')
+  $('#modal-01-body').html('Failed to find any matching entries')
+  $('#modal-01').modal('show')
 }
 
 const updateEntrySuccess = function (res) {
-  $('#messaging').text('Successfully updated entry')
+  $('#modal-01-body').html('Successfully updated entry')
+  $('#modal-01').modal('show')
   $('#update-entry-form').trigger('reset')
   $('#entries-div').trigger('reset')
 }
 const updateEntryFail = function () {
-  $('#messaging').text('Failed to update entry')
+  $('#modal-01-body').html('Failed to update entry')
+  $('#modal-01').modal('show')
 }
 
 const deleteEntrySuccess = function () {
-  $('#messaging').text('Successfully deleted entry')
+  $('#modal-01-body').html('Entry successfully deleted')
+  $('#modal-01').modal('show')
   $('#delete-entry-form').trigger('reset')
   $('#entries-div').trigger('reset')
 }
 const deleteEntryFail = function () {
-  $('#messaging').text('Failed to delete entry')
+  $('#modal-01-body').html('Failed to delete entry')
+  $('#modal-01').modal('show')
 }
 
 const navCreateEntry = function () {
