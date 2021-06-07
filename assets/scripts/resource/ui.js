@@ -3,8 +3,11 @@ const store = require('./../store.js')
 
 const createEntrySuccess = function (res) {
   store.entry = res.entry
-  // need to refactor this into something legible in the future
-  $('#entries-div').text(`${JSON.stringify(store.entry)}`)
+  const entriesHtml = `
+  <h4>${store.entry.symbol}</h4>
+  <p>${store.entry.text}</p>
+  `
+  $('#entries-div').html(entriesHtml)
   $('#create-entry-form').trigger('reset')
 }
 const createEntryFail = function () {
@@ -12,9 +15,6 @@ const createEntryFail = function () {
 }
 
 const indexEntriesSuccess = function (res) {
-  console.log(res)
-  // store.entries = res.entries
-  // $('#json').text(JSON.stringify(store.entries, null, 4))
   let entriesHtml = ''
   res.entries.forEach(function (entry) {
     entriesHtml += `
