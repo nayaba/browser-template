@@ -68,6 +68,18 @@ const deleteEntryFail = function () {
   $('#messaging').text('Failed to delete entry')
 }
 
+const navCreateEntry = function () {
+  $('#change-password-div').hide()
+  $('#index-entry-div').hide()
+  $('#create-entry-div').show()
+}
+
+const navIndexEntries = function () {
+  $('#change-password-div').hide()
+  $('#create-entry-div').hide()
+  $('#index-entry-div').show()
+}
+
 module.exports = {
   createEntrySuccess,
   createEntryFail,
@@ -78,5 +90,7 @@ module.exports = {
   updateEntrySuccess,
   updateEntryFail,
   deleteEntrySuccess,
-  deleteEntryFail
+  deleteEntryFail,
+  navCreateEntry,
+  navIndexEntries
 }

@@ -48,10 +48,24 @@ const onDynamicDeleteEntry = function (event) {
     .catch(ui.deleteEntryFail)
 }
 
+const onNavCreateEntry = function (event) {
+  event.preventDefault()
+
+  ui.navCreateEntry()
+}
+
+const onNavIndexEntries = function (event) {
+  event.preventDefault()
+
+  ui.navIndexEntries()
+}
+
 module.exports = {
   onCreateEntry,
   onIndexEntries,
   onShowEntry,
   onDynamicUpdateEntry,
-  onDynamicDeleteEntry
+  onDynamicDeleteEntry,
+  onNavCreateEntry,
+  onNavIndexEntries
 }

@@ -195,3 +195,5 @@ Format search by id results so JSON is not on page
 hide 'change password' and 'search'
 Add 'change password' to navbar; initially hide change-password-div, show
 on change-password-nav-button click
+--------
+Add 'create new entry' and 'show all entries' to navbar

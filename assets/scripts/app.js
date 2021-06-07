@@ -14,12 +14,15 @@ $(() => {
   $('#sign-up-link').on('click', userEvents.onSignUpLink)
   $('#sign-in-link').on('click', userEvents.onSignInLink)
   $('#forgot-password-link').on('click', userEvents.onForgotPasswordLink)
+
+  $('#sign-out-button').on('click', userEvents.onSignOut)
   $('#change-password-nav-button').on('click', userEvents.onNavChangePassword)
+  $('#create-entry-nav-button').on('click', resourceEvents.onNavCreateEntry)
+  $('#index-entry-nav-button').on('click', resourceEvents.onNavIndexEntries)
 
   $('#sign-up-form').on('submit', userEvents.onSignUp)
   $('#sign-in-form').on('submit', userEvents.onSignIn)
   $('#change-password-form').on('submit', userEvents.onChangePassword)
-  $('#sign-out-button').on('click', userEvents.onSignOut)
 
   $('#create-entry-form').on('submit', resourceEvents.onCreateEntry)
   $('#index-entries-button').on('click', resourceEvents.onIndexEntries)
