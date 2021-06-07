@@ -47,9 +47,10 @@ const dynamicUpdateEntry = function (id, data) {
 }
 
 const dynamicDeleteEntry = function (id) {
+  console.log('api id: ', id)
   return $.ajax({
     method: 'DELETE',
-    url: config.apiUrl + `/entries/${id}`,
+    url: config.apiUrl + '/entries/' + id,
     headers: {
       Authorization: `Bearer ${store.user.token}`
     }

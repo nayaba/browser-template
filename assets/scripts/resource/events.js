@@ -53,8 +53,7 @@ const onDynamicUpdateEntry = function (event) {
 const onDynamicDeleteEntry = function (event) {
   event.preventDefault()
 
-  const updateForm = event.target
-  const id = $(updateForm).data('id')
+  const id = $(event.currentTarget).data('id')
 
   api.dynamicDeleteEntry(id)
     .then(ui.deleteEntrySuccess)
