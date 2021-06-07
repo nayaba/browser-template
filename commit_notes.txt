@@ -186,3 +186,8 @@ from main page as they will be available on 'show all entries'
 --------
 change sign out button class to "btn-link" and edit css to make button look
 like a link; move sign out link to the navbar
+--------
+Format change password and search forms to be in line with the rest of the
+forms on the page
+Fix search by id bug: api url needed to be: '/entries/' + id.id
+Form search by id results so JSON is not on page

@@ -4,8 +4,8 @@ const store = require('./../store.js')
 const createEntrySuccess = function (res) {
   store.entry = res.entry
   const entriesHtml = `
-  <h4>${store.entry.symbol}</h4>
-  <p>${store.entry.text}</p>
+    <h4>${store.entry.symbol}</h4>
+    <p>${store.entry.text}</p>
   `
   $('#entries-div').html(entriesHtml)
   $('#create-entry-form').trigger('reset')
@@ -36,7 +36,14 @@ const indexEntriesFail = function () {
 
 const showEntrySuccess = function (res) {
   store.entry = res.entry
-  $('#entries-div').text(`${JSON.stringify(store.entry)}`)
+  // $('#entries-div').text(`${JSON.stringify(store.entry)}`)
+
+  store.entry = res.entry
+  const entriesHtml = `
+    <h4>${store.entry.symbol}</h4>
+    <p>${store.entry.text}</p>
+  `
+  $('#entries-div').html(entriesHtml)
   $('#show-entry-form').trigger('reset')
 }
 const showEntryFail = function () {

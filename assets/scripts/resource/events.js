@@ -24,20 +24,6 @@ const onShowEntry = function (event) {
     .catch(ui.showEntryFail)
 }
 
-// const onUpdateEntry = function (event) {
-//   event.preventDefault()
-//   api.updateEntry(getFormFields(event.target))
-//     .then(ui.updateEntrySuccess)
-//     .catch(ui.updateEntryFail)
-// }
-//
-// const onDeleteEntry = function (event) {
-//   event.preventDefault()
-//   api.deleteEntry(getFormFields(event.target))
-//     .then(ui.deleteEntrySuccess)
-//     .catch(ui.deleteEntryFail)
-// }
-
 const onDynamicUpdateEntry = function (event) {
   event.preventDefault()
 

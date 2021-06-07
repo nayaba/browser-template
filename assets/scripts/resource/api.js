@@ -24,10 +24,11 @@ const indexEntries = function () {
   })
 }
 
-const showEntry = function (data) {
+const showEntry = function (id) {
+  console.log('api data: ', id.id)
   return $.ajax({
     method: 'GET',
-    url: config.apiUrl + `/entries/${data.id}`,
+    url: config.apiUrl + '/entries/' + id.id,
     headers: {
       Authorization: `Bearer ${store.user.token}`
     }
