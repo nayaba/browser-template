@@ -208,3 +208,7 @@ Update all 'user' 'messaging' to appear in modal
 Update all 'resource' 'messaging' to appear in modal
 --------
 Update 'sign up successful' message to give sign in instruction
+--------
+Move update entry form to modal
+--------
+Add functionality to update entry form in modal

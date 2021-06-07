@@ -30,4 +30,6 @@ $(() => {
 
   $('#entries-div').on('submit', '.dynamic-update-entry', resourceEvents.onUpdateEntry)
   $('#entries-div').on('click', '.dynamic-delete-entry', resourceEvents.onDynamicDeleteEntry)
+
+  $('#modal-01-body').on('submit', '.modal-update-entry', resourceEvents.onDynamicUpdateEntry)
 })

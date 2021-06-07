@@ -69,12 +69,11 @@ const showEntryFail = function () {
 }
 
 const updateEntrySuccess = function (res) {
-  console.log('res: ', res)
   $('#modal-01-body').html(`
-    <form class="dynamic-update-entry" data-id=${res}>
+    <form class="modal-update-entry" data-id=${res}>
       <input class="update-entry-text" type="text" name="entry[text]" placeholder="text">
       <input class="update-entry-symbol" type="text" name="entry[symbol]" placeholder="symbol">
-      <button class="dynamic-update-entry">Update Entry</button>
+      <button class="modal-update-entry">Update Entry</button>
     </form>
     `)
   $('#modal-01').modal('show')
