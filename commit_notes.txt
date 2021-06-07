@@ -183,3 +183,6 @@ Format new entries so the JSON doesn't show up on the site
 --------
 Remove 'update' and 'delete entry'
 from main page as they will be available on 'show all entries'
+--------
+change sign out button class to "btn-link" and edit css to make button look
+like a link; move sign out link to the navbar
