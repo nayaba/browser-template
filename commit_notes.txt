@@ -213,4 +213,10 @@ Move update entry form to modal
 --------
 Add functionality to update entry form in modal
 --------
+Format update entry modal
+--------
 Need notification of successful update
+--------
+rename updateEntrySuccess to dynamicUpdateEntrySuccess
+close entry update modal on update
+enable page refresh after an entry update

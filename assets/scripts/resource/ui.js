@@ -73,7 +73,7 @@ const showEntryFail = function () {
   $('#modal-01').modal('show')
 }
 
-const updateEntrySuccess = function (res) {
+const dynamicUpdateEntrySuccess = function (res) {
   $('#modal-01-body').html(`
     <form class="modal-update-entry" data-id=${res}>
       <input class="update-entry-text form-control mb-2" type="text" name="entry[text]" placeholder="text">
@@ -95,6 +95,10 @@ const updateEntrySuccess = function (res) {
   $('#modal-01').modal('show')
   $('#update-entry-form').trigger('reset')
   $('#entries-div').trigger('reset')
+}
+const updateEntrySuccess = function () {
+  $('#modal-01').modal('hide')
+  $('#index-entries-button').click()
 }
 const updateEntryFail = function () {
   $('#modal-01-body').html('Failed to update entry')
@@ -136,11 +140,12 @@ module.exports = {
   indexEntriesFail,
   showEntrySuccess,
   showEntryFail,
-  updateEntrySuccess,
+  dynamicUpdateEntrySuccess,
   updateEntryFail,
   deleteEntrySuccess,
   deleteEntryFail,
   navCreateEntry,
   navIndexEntries,
-  updateEntryModal
+  updateEntryModal,
+  updateEntrySuccess
 }

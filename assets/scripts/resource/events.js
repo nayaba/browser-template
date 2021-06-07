@@ -30,7 +30,7 @@ const onUpdateEntry = function (event) {
   const updateForm = event.target
   const id = $(updateForm).data('id')
 
-  ui.updateEntrySuccess(id)
+  ui.dynamicUpdateEntrySuccess(id)
   // api.updateEntry(getFormFields(event.target))
   //   .then(ui.updateEntrySuccess)
   //   .catch(ui.updateEntryFail)
@@ -46,6 +46,7 @@ const onDynamicUpdateEntry = function (event) {
 
   api.dynamicUpdateEntry(id, data)
     .then(ui.updateEntrySuccess)
+    .then(onIndexEntries(event))
     .catch(ui.updateEntryFail)
 }
 
