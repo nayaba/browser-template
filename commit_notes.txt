@@ -224,3 +224,5 @@ enable page refresh after an entry update
 Fix delete bug
 --------
 Create 'create entry success' modal
+--------
+Update deleteEntriesSuccess so that the page refreshes when an entry is deleted

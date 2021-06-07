@@ -72,6 +72,7 @@ const onNavIndexEntries = function (event) {
   ui.navIndexEntries()
 }
 
+
 module.exports = {
   onCreateEntry,
   onIndexEntries,
@@ -80,5 +81,5 @@ module.exports = {
   onDynamicDeleteEntry,
   onNavCreateEntry,
   onNavIndexEntries,
-  onUpdateEntry
+  onUpdateEntry,
 }

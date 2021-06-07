@@ -112,9 +112,13 @@ const updateEntryFail = function () {
 
 const deleteEntrySuccess = function () {
   $('#modal-01-body').html('Entry successfully deleted')
+  $('#modal-01-footer').html(`  <div class="modal-footer" class="delete-entry-close">
+      <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+    </div>`)
   $('#modal-01').modal('show')
   $('#delete-entry-form').trigger('reset')
   $('#entries-div').trigger('reset')
+  $('#index-entries-button').click()
 }
 const deleteEntryFail = function () {
   $('#modal-01-body').html('Failed to delete entry')
