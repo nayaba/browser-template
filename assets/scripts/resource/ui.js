@@ -45,6 +45,10 @@ const showEntrySuccess = function (res) {
   `
   $('#entries-div').html(entriesHtml)
   $('#show-entry-form').trigger('reset')
+
+  $('#change-password-div').hide()
+  $('#create-entry-div').hide()
+  $('#index-entry-div').hide()
 }
 const showEntryFail = function () {
   $('#messaging').text('Failed to find entry')

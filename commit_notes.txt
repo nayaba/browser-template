@@ -197,3 +197,5 @@ Add 'change password' to navbar; initially hide change-password-div, show
 on change-password-nav-button click
 --------
 Add 'create new entry' and 'show all entries' to navbar
+--------
+Add Dujo logo and search box to navbar

@@ -26,5 +26,6 @@ change font
 Automatically refresh the page after update or delete
 
 add search function to navbar
+https://www.codeply.com/go/pG674ErRQg
 
 need to .reset messaging and entries div at appropriate times
