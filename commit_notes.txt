@@ -199,3 +199,8 @@ on change-password-nav-button click
 Add 'create new entry' and 'show all entries' to navbar
 --------
 Add Dujo logo and search box to navbar
+--------
+Create blank 'sign in successful' modal
+--------
+Customize sign in modal
+Update all 'user' 'messaging' to appear in modal
