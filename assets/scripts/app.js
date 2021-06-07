@@ -28,6 +28,6 @@ $(() => {
   $('#index-entries-button').on('click', resourceEvents.onIndexEntries)
   $('#show-entry-form').on('submit', resourceEvents.onShowEntry)
 
-  $('#entries-div').on('submit', '.dynamic-update-entry', resourceEvents.onDynamicUpdateEntry)
+  $('#entries-div').on('submit', '.dynamic-update-entry', resourceEvents.onUpdateEntry)
   $('#entries-div').on('click', '.dynamic-delete-entry', resourceEvents.onDynamicDeleteEntry)
 })

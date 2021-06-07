@@ -24,6 +24,18 @@ const onShowEntry = function (event) {
     .catch(ui.showEntryFail)
 }
 
+const onUpdateEntry = function (event) {
+  event.preventDefault()
+
+  const updateForm = event.target
+  const id = $(updateForm).data('id')
+
+  ui.updateEntrySuccess(id)
+  // api.updateEntry(getFormFields(event.target))
+  //   .then(ui.updateEntrySuccess)
+  //   .catch(ui.updateEntryFail)
+}
+
 const onDynamicUpdateEntry = function (event) {
   event.preventDefault()
 
@@ -67,5 +79,6 @@ module.exports = {
   onDynamicUpdateEntry,
   onDynamicDeleteEntry,
   onNavCreateEntry,
-  onNavIndexEntries
+  onNavIndexEntries,
+  onUpdateEntry
 }
