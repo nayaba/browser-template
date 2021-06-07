@@ -180,3 +180,6 @@ Found bug with enums - can pass any string as the symbol
 Successfully added dynamic delete button functionality
 --------
 Format new entries so the JSON doesn't show up on the site
+--------
+Remove 'update' and 'delete entry'
+from main page as they will be available on 'show all entries'

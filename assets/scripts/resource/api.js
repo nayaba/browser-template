@@ -34,27 +34,6 @@ const showEntry = function (data) {
   })
 }
 
-const updateEntry = function (data) {
-  return $.ajax({
-    method: 'PATCH',
-    url: config.apiUrl + `/entries/${data.id}`,
-    data: data,
-    headers: {
-      Authorization: `Bearer ${store.user.token}`
-    }
-  })
-}
-
-const deleteEntry = function (data) {
-  return $.ajax({
-    method: 'DELETE',
-    url: config.apiUrl + `/entries/${data.id}`,
-    headers: {
-      Authorization: `Bearer ${store.user.token}`
-    }
-  })
-}
-
 const dynamicUpdateEntry = function (id, data) {
   return $.ajax({
     method: 'PATCH',
@@ -80,8 +59,6 @@ module.exports = {
   createEntry,
   indexEntries,
   showEntry,
-  updateEntry,
-  deleteEntry,
   dynamicUpdateEntry,
   dynamicDeleteEntry
 }

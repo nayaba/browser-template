@@ -29,7 +29,6 @@ const indexEntriesSuccess = function (res) {
     `
   })
   $('#entries-div').html(entriesHtml)
-
 }
 const indexEntriesFail = function () {
   $('#messaging').text('Failed to find entries')

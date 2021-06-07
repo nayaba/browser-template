@@ -22,3 +22,7 @@ https://jsfiddle.net/wrvnsst2/
 
 
 change font
+
+hide 'change password' and 'search'; remove 'update' and 'delete entry'
+from main page as they will be available on 'show all entries'
+Automatically refresh the page after update or delete
