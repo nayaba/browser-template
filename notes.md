@@ -30,10 +30,13 @@ https://www.codeply.com/go/pG674ErRQg
 
 x-need to .reset messaging and entries div at appropriate times
 
-add date to card headers
+x-add date to card headers
 
+x-make sure entries div clears after showing an entry
 
-make sure entries div clears after showing an entry
+show a "no entries yet, make your first entry" message if there are not entries for a user
 
 I'm using too many ids, need to start using classes
 I'd like more organization and custom error messages
+
+Learn more about branch naming conventions

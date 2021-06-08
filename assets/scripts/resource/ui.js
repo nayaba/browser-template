@@ -134,8 +134,10 @@ const deleteEntryFail = function () {
 const navCreateEntry = function () {
   $('#change-password-div').hide()
   $('#create-entry-div').show()
+  $('#index-entry-div').hide()
   $('#entries-div-container').hide()
   $('#index-entry-div').hide()
+  $('#entries-div-container').html('')
 }
 
 const navIndexEntries = function () {

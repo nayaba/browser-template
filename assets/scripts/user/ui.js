@@ -71,6 +71,7 @@ const navChangePassword = function () {
   $('#entries-div-container').hide()
   $('#show-entry-div').hide()
   $('#index-entry-div').hide()
+  $('#entries-div-container').html('')
 }
 
 // const forgotPasswordLinkSuccess = function () {

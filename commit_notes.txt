@@ -230,3 +230,5 @@ Update deleteEntriesSuccess so that the page refreshes when an entry is deleted
 Fix bug with 'show entry' in the navbar
 -------
 Add dates to entry cards (super exciting to be able to format!)
+-------
+Fix 'show all entries' bug - once you show all entries, they stay put
