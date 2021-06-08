@@ -69,7 +69,10 @@ const onNavCreateEntry = function (event) {
 const onNavIndexEntries = function (event) {
   event.preventDefault()
 
-  ui.navIndexEntries()
+  api.indexEntries()
+    .then(ui.indexEntriesSuccess)
+    .then(ui.navIndexEntries)
+    .catch(ui.indexEntriesFail)
 }
 
 

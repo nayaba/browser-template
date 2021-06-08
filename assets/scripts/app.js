@@ -9,6 +9,7 @@ $(() => {
   $('#sign-up-div').hide()
   $('#nav').hide()
   $('#change-password-div').hide()
+  $('#index-entry-div').hide()
 
   // click on sign up link to show sign up div and hide sign in div
   $('#sign-up-link').on('click', userEvents.onSignUpLink)

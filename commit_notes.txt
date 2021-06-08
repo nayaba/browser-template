@@ -226,3 +226,5 @@ Fix delete bug
 Create 'create entry success' modal
 --------
 Update deleteEntriesSuccess so that the page refreshes when an entry is deleted
+--------
+Fix bug with 'show entry' in the navbar

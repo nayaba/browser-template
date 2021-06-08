@@ -4,9 +4,9 @@ add custom errors to browser
 
 x- change index to show most recently updated entry first
 
-create update entry form
+x- create update entry form
 
-enable users to index all entries then click on the one which should be updated
+x- enable users to index all entries then click on the one which should be updated
 
 
 $ heroku restart
@@ -28,9 +28,12 @@ Automatically refresh the page after update or delete
 add search function to navbar
 https://www.codeply.com/go/pG674ErRQg
 
-need to .reset messaging and entries div at appropriate times
+x-need to .reset messaging and entries div at appropriate times
 
 add date to card headers
 
 
 make sure entries div clears after showing an entry
+
+I'm using too many ids, need to start using classes
+I'd like more organization and custom error messages

@@ -68,9 +68,9 @@ const signInLinkSuccess = function () {
 const navChangePassword = function () {
   $('#change-password-div').show()
   $('#create-entry-div').hide()
-  $('#index-entry-div').hide()
+  $('#entries-div-container').hide()
   $('#show-entry-div').hide()
-
+  $('#index-entry-div').hide()
 }
 
 // const forgotPasswordLinkSuccess = function () {
