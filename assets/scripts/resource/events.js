@@ -18,8 +18,9 @@ const onIndexEntries = function (event) {
 }
 
 const onShowEntry = function (event) {
+  const data = getFormFields(event.target)
   event.preventDefault()
-  api.showEntry(getFormFields(event.target))
+  api.searchEntries(data.entry.text)
     .then(ui.showEntrySuccess)
     .catch(ui.showEntryFail)
 }

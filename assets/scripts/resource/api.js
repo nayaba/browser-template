@@ -4,6 +4,7 @@ const config = require('./../config.js')
 const store = require('./../store.js')
 
 const createEntry = function (data) {
+  console.log('api create data: ', data)
   return $.ajax({
     method: 'POST',
     data: data,
@@ -25,10 +26,20 @@ const indexEntries = function () {
 }
 
 const showEntry = function (id) {
-  console.log('api data: ', id.id)
   return $.ajax({
     method: 'GET',
     url: config.apiUrl + '/entries/' + id.id,
+    headers: {
+      Authorization: `Bearer ${store.user.token}`
+    }
+  })
+}
+
+const searchEntries = function (text) {
+  console.log('api text: ', text)
+  return $.ajax({
+    method: 'GET',
+    url: config.apiUrl + '/entries/search/' + text,
     headers: {
       Authorization: `Bearer ${store.user.token}`
     }
@@ -61,5 +72,6 @@ module.exports = {
   indexEntries,
   showEntry,
   dynamicUpdateEntry,
-  dynamicDeleteEntry
+  dynamicDeleteEntry,
+  searchEntries
 }

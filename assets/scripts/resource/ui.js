@@ -64,8 +64,8 @@ const indexEntriesFail = function () {
 }
 
 const showEntrySuccess = function (res) {
-  store.entry = res.entry
-  // $('#entries-div').text(`${JSON.stringify(store.entry)}`)
+  console.log('res: ', res)
+  store.entry = res.entry[0]
 
   const entriesHtml = `
     <h4>${store.entry.symbol}</h4>
@@ -78,7 +78,8 @@ const showEntrySuccess = function (res) {
   $('#create-entry-div').hide()
   $('#index-entry-div').hide()
 }
-const showEntryFail = function () {
+const showEntryFail = function (err) {
+  console.log('showEntryFail err: ', err)
   $('#modal-01-body').html('Failed to find any matching entries')
   $('#modal-01').modal('show')
 }

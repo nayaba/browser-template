@@ -41,6 +41,8 @@ add introductory paragraph with short bujo explanation
 currently organized in order of date created - need to update to organize by date updated
   (will have to update api and redeploy on heroku)
 
+Deployed app was sometimes saying failed to delete, but it was still deleting
+
 I'm using too many ids, need to start using classes
 I'd like more organization and custom error messages
 
