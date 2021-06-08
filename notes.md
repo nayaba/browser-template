@@ -36,7 +36,14 @@ x-make sure entries div clears after showing an entry
 
 show a "no entries yet, make your first entry" message if there are not entries for a user
 
+add introductory paragraph with short bujo explanation
+
+currently organized in order of date created - need to update to organize by date updated
+  (will have to update api and redeploy on heroku)
+
 I'm using too many ids, need to start using classes
 I'd like more organization and custom error messages
 
 Learn more about branch naming conventions
+
+interestingly, enums seems to only work where 'create' is concerned, but is ignored on 'update'

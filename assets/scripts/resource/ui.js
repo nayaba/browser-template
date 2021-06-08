@@ -48,8 +48,7 @@ const indexEntriesSuccess = function (res) {
         </div>
 
         <div class="card-body">
-          <h5 class="card-title">${entry.symbol}</h5>
-          <p class="card-text">${entry.text}</p>
+          <p class="card-text"><span class="entry-symbol">${entry.symbol}</span> ${entry.text}</p>
           </div>
           </div>
         </div>
