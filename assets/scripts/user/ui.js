@@ -57,7 +57,7 @@ const signOutSuccess = function () {
   $('#modal-01').modal('show')
   $('#sign-up-form').trigger('reset')
   $('#sign-in-form').trigger('reset')
-  $('#sign-in-div').show()
+
   $('#after-sign-in').hide()
 
   $('#change-password-div').hide()
@@ -65,6 +65,9 @@ const signOutSuccess = function () {
   $('#entries-div-container').hide()
   $('#index-entry-div').hide()
   $('#entries-div-container').html('')
+  $('#entries-div-container').trigger('reset')
+
+  $('#sign-in-div').show()
 }
 const signOutFail = function () {
   $('#modal-01-body').html('Failed to sign out')
