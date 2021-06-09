@@ -242,3 +242,6 @@ Change front page to show sign-up before showing sign-in
 Update 'sign-in successful' text to add instruction
 Reformat 'successfully-created-new-entry' modal to be in line with the rest of
 the entry presentation on the site
+-------
+Add imgur link to navbar and re-title 'Bujo' from 'Dujo'
+Create ReadMe file
