@@ -33,4 +33,7 @@ $(() => {
   $('#entries-div').on('click', '.dynamic-delete-entry', resourceEvents.onDynamicDeleteEntry)
 
   $('#modal-01-body').on('submit', '.modal-update-entry', resourceEvents.onDynamicUpdateEntry)
+
+  $('#modal-01-header').on('submit', '.dynamic-update-entry', resourceEvents.onUpdateEntry)
+  $('#modal-01-header').on('click', '.dynamic-delete-entry', resourceEvents.onDynamicDeleteEntry)
 })

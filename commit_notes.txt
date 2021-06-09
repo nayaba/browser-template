@@ -236,3 +236,4 @@ Fix 'show all entries' bug - once you show all entries, they stay put
 Redesign cards so that symbol is no longer a title and shows up next to entry text
 -------
 Update logo
+Update search results so they are editable
