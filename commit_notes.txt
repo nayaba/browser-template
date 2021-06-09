@@ -237,3 +237,8 @@ Redesign cards so that symbol is no longer a title and shows up next to entry te
 -------
 Update logo
 Update search results so they are editable
+-------
+Change front page to show sign-up before showing sign-in
+Update 'sign-in successful' text to add instruction
+Reformat 'successfully-created-new-entry' modal to be in line with the rest of
+the entry presentation on the site

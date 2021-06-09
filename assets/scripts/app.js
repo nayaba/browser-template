@@ -6,7 +6,7 @@ const resourceEvents = require('./resource/events')
 $(() => {
   // hide everything except for sign in
   $('#after-sign-in').hide()
-  $('#sign-up-div').hide()
+  $('#sign-in-div').hide()
   $('#nav').hide()
   $('#change-password-div').hide()
   $('#index-entry-div').hide()

@@ -8,9 +8,11 @@ const createEntrySuccess = function (res) {
     <p>${store.entry.text}</p>
   `
   // $('#entries-div').html(entriesHtml)
-  $('#modal-01-body').html(`<p>Successfully created new entry</p>
-    <h4>${store.entry.symbol}</h4>
-    <p>${store.entry.text}</p>
+  $('#modal-01-header').html(`
+    <p>Successfully created new entry</p>
+    `)
+  $('#modal-01-body').html(`
+    <p class="card-text"><span class="entry-symbol">${store.entry.symbol}</span> ${store.entry.text}</p>
     `)
   $('#modal-01').modal('show')
   $('#create-entry-form').trigger('reset')

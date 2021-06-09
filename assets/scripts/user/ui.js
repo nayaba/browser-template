@@ -23,7 +23,16 @@ const signInSuccess = function (res) {
   document.getElementById('entry-owner').value = store.user._id
   $('#sign-in-form').trigger('reset')
 
-  $('#modal-01-body').html('Successfully signed in!')
+  $('#modal-01-header').html('Successfully signed in!')
+  $('#modal-01-body').html(`<p>Get started with your digital bullet journal by creating your first entry.
+  Be sure to label your entry with one of the symbols in your key:</p>
+  <ul>
+  <li><span class="entry-symbol">-</span> a note</li>
+  <li><span class="entry-symbol">*</span> a task</li>
+  <li><span class="entry-symbol">+</span> an event</li>
+  <li><span class="entry-symbol">></span> a task to do later</li>
+  </ul>
+  `)
   $('#modal-01').modal('show')
 }
 const signInFail = function () {
