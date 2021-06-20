@@ -71,7 +71,7 @@ const onNavIndexEntries = function (event) {
   event.preventDefault()
 
   api.indexEntries()
-    .then(ui.indexEntriesSuccess)
+    .then(res => res.entries.length === 0 ? ui.noEntries(res) : ui.indexEntriesSuccess(res))
     .then(ui.navIndexEntries)
     .catch(ui.indexEntriesFail)
 }

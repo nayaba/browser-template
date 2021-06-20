@@ -245,3 +245,6 @@ the entry presentation on the site
 -------
 Add imgur link to navbar and re-title 'Bujo' from 'Dujo'
 Create ReadMe file
+-------
+Add 'no entries yet' messaging
+Created ternary statement in onNavIndexEntries function in events.js

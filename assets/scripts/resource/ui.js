@@ -175,6 +175,11 @@ const updateEntryModal = function () {
   $('#modal-01').modal('show')
 }
 
+const noEntries = function () {
+  $('#modal-01-body').html('You don\'t have any entries yet.  Click \'New Entry\' to create your first entry!')
+  $('#modal-01').modal('show')
+}
+
 module.exports = {
   createEntrySuccess,
   createEntryFail,
@@ -189,5 +194,6 @@ module.exports = {
   navCreateEntry,
   navIndexEntries,
   updateEntryModal,
-  updateEntrySuccess
+  updateEntrySuccess,
+  noEntries
 }
